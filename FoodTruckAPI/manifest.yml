@@ -1,0 +1,10 @@
+applictions:
+-path: .
+	memory: 256M
+	instances: 1
+	domain: myblemix.net
+	name: FoodTruckAPI Server
+	host: FoodTruckAPI-Server
+	disk_quota: 1024M
+	buildpack: swift_buildpack
+	command: FoodTruckServer
