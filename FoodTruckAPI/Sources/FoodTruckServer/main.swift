@@ -23,7 +23,7 @@ do {
 let controller = FoodTruckController(backend: trucks)
 
 do {
-    let port = try ConfigurationManager().port
+    let port = ConfigurationManager().port
     Log.verbose("Used port is \(port)")
     Kitura.addHTTPServer(onPort: port, with: controller.router)
     Kitura.run()
